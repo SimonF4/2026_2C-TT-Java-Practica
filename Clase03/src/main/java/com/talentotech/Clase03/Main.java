@@ -4,7 +4,7 @@ package com.talentotech.Clase03;
  * Hello world!
  *
  */
-public class App 
+public class Main 
 {
     public static void main( String[] args )
     {
@@ -22,6 +22,10 @@ public class App
         System.out.println( "Producto 1: " + p1.getPrecio() + " - " +  p1.getStock() );
         System.out.println( "Producto 2: " + p2.getPrecio() + " - " +  p2.getStock() );
     
+        
+        
+        
+        
         
     }
 }
