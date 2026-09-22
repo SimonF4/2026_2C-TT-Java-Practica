@@ -38,6 +38,10 @@ public class Producto {
 	}
 
 	// GETTERS Y SETTERS
+	public Long getId() {
+        return id;
+    }
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -60,5 +64,14 @@ public class Producto {
 
 	public void setStock(int stock) {
 		this.stock = stock;
+	}
+	
+	// OTROS METODOS:
+	// metodos propios de la clase
+	public void mostrarDatos() {
+		System.out.println("ID: " 		+ id);
+		System.out.println("Nombre: " 	+ nombre);
+		System.out.println("Precio: " 	+ precio);
+        System.out.println("Stock: " 	+ stock);
 	}
 }
