@@ -1,6 +1,6 @@
 package com.talentotech.Clase03;
 
-public class Producto {
+public abstract class Producto {
 
 	// contador estatico:
 	// Funciona a nivel de clase, no depende de una instancia creada.
