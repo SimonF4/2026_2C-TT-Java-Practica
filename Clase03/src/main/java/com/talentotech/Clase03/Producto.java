@@ -4,7 +4,8 @@ public class Producto {
 
 	// contador estatico:
 	// Funciona a nivel de clase, no depende de una instancia creada.
-	private static Long contadorId = 0L; 
+	private static Long contadorId = 0L;
+	private static int totalProductos = 0;
 	
 	// Atributos
 	private Long id;
@@ -34,6 +35,8 @@ public class Producto {
 		}else {
 			this.stock = stock;			
 		}
+		
+		totalProductos++;
 		// TODO Mejorar: Validaciones, extraerlas a metodos y validar los otros atributos.
 	}
 
@@ -66,6 +69,10 @@ public class Producto {
 		this.stock = stock;
 	}
 	
+	public static int getTotalProductos() {
+		return totalProductos;
+	}
+
 	// OTROS METODOS:
 	// metodos propios de la clase
 	public void mostrarDatos() {
