@@ -69,6 +69,7 @@ public abstract class Producto {
 		this.stock = stock;
 	}
 	
+	// Metodo ESTATICO:
 	public static int getTotalProductos() {
 		return totalProductos;
 	}
@@ -81,4 +82,14 @@ public abstract class Producto {
 		System.out.println("Precio: " 	+ precio);
         System.out.println("Stock: " 	+ stock);
 	}
+	
+	// CLASE 04:
+	// Transformamos la clase Producto a una clase abstracta.
+	
+	// ---------- METODOS ABSTRACTOS ----------
+	public abstract String getCategoria();
+	
+	// ---------- METODOS ESTATICOS ----------
+	// getTotalProductos() - q ya hicimos al inicio de la clase.
+
 }

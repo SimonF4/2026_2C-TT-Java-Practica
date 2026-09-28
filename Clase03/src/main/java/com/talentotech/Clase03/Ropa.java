@@ -10,6 +10,9 @@ public class Ropa extends Producto{
 		super(nombre, precio, stock);
 		this.talle = talle;
 	}
-	
-	
+
+	@Override
+	public String getCategoria() {
+		return "Ropa";
+	}
 }
